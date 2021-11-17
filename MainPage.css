@@ -200,6 +200,10 @@ body{
   .headlines img{
     width: 45vw;
   }
+
+  .top .logo, .top .netflix{
+    height: 5vw;
+  }
 }
 
 
