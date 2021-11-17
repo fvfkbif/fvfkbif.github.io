@@ -51,19 +51,19 @@ body{
 }
 
 .line{
-  width: 30px;
+  width: 2vw;
   height: 2px;
 }
 
 .menu p{
   font-family: Segoe UI Light;
   font-weight: lighter;
-  font-size: 4vh;
+  font-size: 2vw;
   padding: 0 15px 0 15px;
 }
 
 .top .logo, .top .netflix{
-  height: 5vh;
+  height: 3vw;
 }
 
 .slider {
