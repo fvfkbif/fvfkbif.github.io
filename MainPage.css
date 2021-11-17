@@ -170,6 +170,38 @@ body{
   }
 }
 
+@media all and (max-width: 480px) {
+  .slide .quote {
+    width: 100%;
+    bottom: 30vh;
+    padding: 0 15px 0 15px;
+    font-size: 40px;
+  }
+
+  .hayao_miyazaki{
+    bottom: 20%;
+  }
+  
+  .hayao_miyazaki p{
+    font-size: 40px;
+    padding: 0 30px 0 30px;
+  }
+
+  .menu p{
+    font-size: 40vw;
+    padding: 0 30px 0 30px;
+  }
+
+  .line{
+    width: 5vw;
+    height: 2px;
+  }
+
+  .headlines img{
+    width: 45vw;
+  }
+}
+
 
 /* Backgorund Images */
  
