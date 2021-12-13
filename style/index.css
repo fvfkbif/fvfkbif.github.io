@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Mysl;
+  src: url(fonts/Mysl.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Segoe UI Light;
+  src: url(fonts/Segoe_UI_Light.ttf) format('ttf');
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.topWrapper {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  z-index: 10;
+}
+
+.top {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 3% 0 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 10%;
+  width: 74%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50%;
+  width: fit-content;
+}
+
+.line {
+  width: 2vw;
+  height: 2px;
+}
+
+.menu .line {
+  -webkit-transition: width ease-in-out 0.4s;
+  -moz-transition: width ease-in-out 0.4s;
+  -o-transition: width ease-in-out 0.4s;
+  transition: width ease-in-out 0.4s;
+}
+
+.menu p {
+  font-family: Segoe UI Light;
+  font-weight: lighter;
+  font-size: 28px;
+  padding: 0 15px 0 15px;
+  transition: font-size ease-in-out 0.4s;
+}
+
+.menu a, .menu a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.menu:hover p {
+  font-size: 32px;
+}
+
+.menu:hover .line {
+  width: 0;
+}
+
+.top .logo, .top .netflix {
+  height: 3vw;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .quote {
+  position: absolute;
+  bottom: 6vh;
+  left: 50%;
+  width: 500px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  text-align: center;
+  color: white;
+  font-family: Mysl;
+  font-size: 22px;
+}
+
+.slide.current .quote {
+  opacity: 1;
+}
+
+.buttons button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 20px;
+  outline: none;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 45%;
+  right: 13%;
+  background: url('../images/Next.png') no-repeat center top/cover;
+  background-size: 50%;
+  transform: scale(1);
+  transition: transform ease-in-out 0.4s;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  background: url('../images/Previous.png') no-repeat center top/cover;
+  background-size: 50%;
+  transform: scale(1);
+  transition: transform ease-in-out 0.4s;
+}
+
+.buttons button#prev:hover, .buttons button#next:hover {
+  transform: scale(1.2);
+}
+
+.headlines {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.headlines img {
+  object-fit: cover;
+  width: 40vw;
+}
+
+.hayao_miyazaki {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 8vh;
+  width: fit-content;
+}
+
+.hayao_miyazaki p {
+  font-family: Segoe UI Light;
+  font-weight: lighter;
+  font-size: 25px;
+  padding: 0 15px 0 15px;
+}
+
+@media all and (max-width: 500px) {
+  .slide .quote {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+}
+
+.slide:first-child {
+  background: url('../images/Bg1.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(2) {
+  background: url('../images/Bg2.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+  background: url('../images/Bg3.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+  background: url('../images/Bg4.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+  background: url('../images/Bg5.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+  background: url('../images/Bg6.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(7) {
+  background: url('../images/Bg7.jpg') no-repeat center center/cover;
+}

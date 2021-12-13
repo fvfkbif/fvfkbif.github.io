@@ -1,0 +1,522 @@
+@font-face {
+  font-family: Segoe UI Light;
+  src: url(fonts/Segoe_UI_Light.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Futura Md;
+  src: url(fonts/Futura_Md.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Mysl;
+  src: url(fonts/Mysl.ttf) format('ttf');
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  scrollbar-track-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topWrapper {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  z-index: 10;
+}
+
+.top {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 3% 0 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 10%;
+  width: 74%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50%;
+  width: fit-content;
+}
+
+.menu a, .menu a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.line {
+  width: 2vw;
+  height: 2px;
+}
+
+.menu .line {
+  -webkit-transition: width ease-in-out 0.4s;
+  -moz-transition: width ease-in-out 0.4s;
+  -o-transition: width ease-in-out 0.4s;
+  transition: width ease-in-out 0.4s;
+}
+
+.menu p {
+  font-family: Segoe UI Light;
+  font-weight: lighter;
+  font-size: 28px;
+  padding: 0 15px 0 15px;
+  -webkit-transition: font-size ease-in-out 0.4s;
+  -moz-transition: font-size ease-in-out 0.4s;
+  -o-transition: font-size ease-in-out 0.4s;
+  transition: font-size ease-in-out 0.4s;
+}
+
+.menu:hover p {
+  font-size: 32px;
+}
+
+.menu:hover .line {
+  width: 0;
+}
+
+.top .logo, .top .netflix {
+  height: 3vw;
+}
+
+.pageTop {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background: url('../images/pageTop.jpg') no-repeat center bottom/cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.pageTop .txtWithImg {
+  width: 600px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.text {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 13%;
+  margin-top: 90px;
+  margin-bottom: 5%;
+}
+
+.notion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.notion img {
+  height: 100px;
+}
+
+.notion p {
+  font-family: Mysl;
+  font-size: 22px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.year {
+  font-family: Segoe UI Light;
+  font-size: 28px;
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.quote {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background: url('../images/Quote_img_1.png') 5% 0% no-repeat,
+    url('../images/Quote_img_2.png') 15% 100% no-repeat,
+    url('../images/Quote_img_3.png') 100% no-repeat;
+  background-size: 300px, 300px, 230px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: black;
+}
+
+.quote p {
+  font-family: Mysl;
+  font-size: 23px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.totoroImage{
+  width: 100%;
+  height: 500px;
+  background: url('../images/Tototro_image.jpg') no-repeat center top/cover;
+}
+
+.history{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  background: url('../images/Gray_rectangle.png') 0 0 no-repeat,
+    url('../images/Gray_rectangle.png') 30% 100% no-repeat,
+    url('../images/History_3.jpg') 85% 150px no-repeat,
+    url('../images/History_2.jpg') 95% 370px no-repeat,
+    url('../images/History_1.jpg') 85% 780px no-repeat,
+    url('../images/Gray_rectangle.png') 100% 20px no-repeat;
+  background-size: 300px 450px, 400px 150px, 360px, 300px, 300px, 400px 150px;
+}
+
+.history .title{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.history .title p{
+  color: black;
+  font-family: Futura Md;
+  font-size: 55px;
+  text-align: center;
+  line-height: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.history .title img:first-child{
+  width: 15%;
+  height: 3px;
+}
+
+.history .title img:last-child{
+  height: 3px;
+}
+
+.history .content{
+  width: 50%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.content p{
+  font-family: Segoe UI Light;
+  font-size: 20px;
+  text-indent: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content p:first-child{
+  margin-top: 40px;
+}
+
+.truckImage{
+  width: 100%;
+  height: 500px;
+  background: url('../images/Truck.jpg') no-repeat center center/cover;
+}
+
+.staff{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.staff .title{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.staff .title p{
+  color: black;
+  font-family: Futura Md;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 400px;
+}
+
+.staff .title img{
+  width: 35%;
+  height: 3px;
+}
+
+.staff .content{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  background: url(../images/Staff_bg.jpg) no-repeat center center/cover;
+}
+
+.portraits{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: url(../images/Portraits_bg.jpg) repeat-y;
+  background-size: 100% 400px;
+}
+
+.onePortr{
+  margin: 30px 60px 30px 60px;
+}
+
+.onePortr img{
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.onePortr figcaption{
+  text-align: center;
+  font-family: Segoe UI Light;
+  font-size: 20px;
+}
+
+.name{
+  font-weight: bolder;
+}
+
+.awards{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  background: url(../images/Awards_bg.jpg) no-repeat center center/cover;
+}
+
+.awards img{
+  width: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.awardsBlock{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.awardsBlock .title{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.awardsBlock .title p{
+  color: white;
+  font-family: Futura Md;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.awardsBlock .title img{
+  width: 43%;
+  height: 3px;
+}
+
+
+
+
+@media all and (max-width: 1000px){
+  .history{
+    background: url('../images/Gray_rectangle.png') 0 0 no-repeat,
+      url('../images/Gray_rectangle.png') 30% 100% no-repeat,
+      url('../images/History_3.jpg') 85% 450px no-repeat,
+      url('../images/History_2.jpg') 95% 670px no-repeat,
+      url('../images/History_1.jpg') 85% 1080px no-repeat,
+      url('../images/Gray_rectangle.png') 100% 50px no-repeat;
+    background-size: 300px 450px, 400px 150px, 360px, 300px, 300px, 400px 150px;
+  }
+
+  .staff .title img{
+    width: 30%;
+  }
+
+  .onePortr{
+    margin: 30px 50px 30px 50px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .pageTop .txtWithImg {
+    width: 400px;
+  }
+
+  .notion p {
+    font-size: 15px;
+  }
+
+  .year {
+    font-size: 20px;
+  }
+
+  .notion img {
+    height: 70px;
+  }
+
+  .quote {
+    background-size: 200px, 200px, 180px;
+  }
+
+  .quote p {
+    font-size: 15px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .history{
+    background: url('../images/Gray_rectangle.png') 0 0 no-repeat,
+      url('../images/Gray_rectangle.png') 30% 100% no-repeat,
+      url('../images/Gray_rectangle.png') 100% 50px no-repeat;
+    background-size: 300px 450px, 400px 150px, 400px 150px;
+  }
+
+  .history .content{
+    align-self: center;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .staff .title p{
+    font-size: 35px;
+  }
+
+  
+}
+
+@media all and (max-width: 600px) {
+  .quote {
+    background: url('../images/Quote_img_1.png') 5% 0% no-repeat,
+      url('../images/Quote_img_2.png') 100% 100% no-repeat;
+    background-size: 200px, 200px, 180px;
+  }
+
+  .totoroImage{
+    height: 280px;
+  }
+
+  .history{
+    background: url('../images/Gray_rectangle.png') 0 130px no-repeat,
+      url('../images/Gray_rectangle.png') 30% 100% no-repeat,
+      url('../images/Gray_rectangle.png') 100% 100px no-repeat;
+    background-size: 150px 450px, 400px 150px, 250px 150px;
+  }
+
+  .history .title p{
+    font-size: 30px;
+  }
+
+  .truckImage{
+    height: 280px;
+  }
+
+  .staff .title p{
+    font-size: 25px;
+  }
+
+  .portraits{
+    background: url(../images/Portraits_bg.jpg) repeat-y;
+    background-size: 100% 180px;
+  }
+  
+  .onePortr{
+    margin: 10px 40px 10px 40px;
+  }
+  
+  .onePortr img{
+    width: 100px;
+  }
+  
+  .onePortr figcaption{
+    font-size: 10px;
+  }
+  
+}
+
+@media all and (max-width: 450px) {
+  .pageTop .txtWithImg {
+    margin-top: 15%;
+    width: 300px;
+  }
+
+  .quote p {
+    font-size: 12px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .content p{
+    font-size: 15px;
+  }
+
+  .staff .title p{
+    font-size: 20px;
+  }
+
+  .onePortr{
+    margin: 10px 20px 10px 20px;
+  }
+}

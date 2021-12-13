@@ -1,0 +1,311 @@
+@font-face {
+  font-family: Segoe UI Light;
+  src: url(fonts/Segoe_UI_Light.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Futura Md;
+  src: url(fonts/Futura_Md.ttf) format('ttf');
+}
+
+body {
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topWrapper {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+}
+
+.top {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 3% 0 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 10%;
+  width: 74%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50%;
+  width: fit-content;
+}
+
+.menu a, .menu a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.line {
+  width: 2vw;
+  height: 2px;
+}
+
+.menu .line {
+  -webkit-transition: width ease-in-out 0.4s;
+  -moz-transition: width ease-in-out 0.4s;
+  -o-transition: width ease-in-out 0.4s;
+  transition: width ease-in-out 0.4s;
+}
+
+.menu p {
+  font-family: Segoe UI Light;
+  font-weight: lighter;
+  font-size: 28px;
+  padding: 0 15px 0 15px;
+  -webkit-transition: font-size ease-in-out 0.4s;
+  -moz-transition: font-size ease-in-out 0.4s;
+  -o-transition: font-size ease-in-out 0.4s;
+  transition: font-size ease-in-out 0.4s;
+}
+
+.menu:hover p {
+  font-size: 32px;
+}
+
+.menu:hover .line {
+  width: 0;
+}
+
+.top .logo, .top .netflix {
+  height: 3vw;
+}
+
+.tabs {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.aboutStudio {
+  background: no-repeat center/cover;
+  transition: background-image 0.8s ease-in-out;
+  background-image: url('../images/menu.whiteBackground.jpg');
+}
+
+.aboutStudio:hover {
+  background-image: url('../images/menu.aboutStudio_bg.jpg');
+}
+
+.films {
+  background: no-repeat center/cover;
+  transition: background-image 0.8s ease-in-out;
+  background-image: url('../images/menu.whiteBackground.jpg');
+}
+
+.films:hover {
+  background-image: url('../images/menu.films_bg.jpg');
+}
+
+.articles {
+  background: no-repeat center/cover;
+  transition: background-image 0.8s ease-in-out;
+  background-image: url('../images/menu.whiteBackground.jpg');
+}
+
+.articles:hover {
+  background-image: url('../images/menu.articles_bg.jpg');
+}
+
+.aboutStudio .title, .films .title, .articles .title {
+  padding: 20px;
+  font-family: Futura Md;
+  font-size: 3vw;
+  color: black;
+  -webkit-transition: 0.8s linear;
+  -moz-transition: 0.8s linear;
+  -o-transition: 0.8s linear;
+  transition: 0.8s linear;
+}
+
+.aboutStudio:hover .title, .films:hover .title, .articles:hover .title {
+  color: white;
+  text-shadow: #808080 0 0 6px;
+}
+
+ul {
+  list-style: none;
+}
+
+.tabs>li {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu li a {
+  color: black;
+  text-align: center;
+}
+
+.submenu li:first-child a p {
+  padding-top: 20px;
+}
+
+.submenu li a p {
+  color: black;
+  padding-top: 12px;
+  text-align: center;
+  font-family: Segoe UI Light;
+  font-size: 1.9vw;
+  -webkit-transition: font-size linear 0.2s;
+  -moz-transition: font-size linear 0.2s;
+  -o-transition: font-size linear 0.2s;
+  transition: font-size linear 0.2s;
+}
+
+.submenu li:hover a p {
+  font-size: 2.2vw;
+}
+
+.forTabs {
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  background: no-repeat center top/contain;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.forTabs.active {
+  opacity: 1;
+}
+
+.forTabs:nth-child(2) {
+  background-image: url('../images/about_studio2.jpg');
+  top: 45%;
+  left: 48%;
+  width: 25%;
+}
+
+.forTabs:nth-child(3) {
+  background-image: url('../images/about_studio3.jpg');
+  top: 40%;
+  left: 75%;
+  width: 12%;
+}
+
+.forTabs:nth-child(4) {
+  background-image: url('../images/about_studio4.jpg');
+  top: 75%;
+  left: 39%;
+  width: 13%;
+}
+
+.forTabs:nth-child(5) {
+  background-image: url('../images/about_studio1.jpg');
+  top: 40%;
+  left: 35%;
+  width: 10%;
+}
+
+.forTabs:nth-child(6) {
+  background-image: url('../images/films1.jpg');
+  top: 40%;
+  left: 5%;
+  width: 23%;
+}
+
+.forTabs:nth-child(7) {
+  background-image: url('../images/films2.jpg');
+  top: 45%;
+  left: 67%;
+  width: 30%;
+  height: 45%;
+}
+
+.forTabs:nth-child(8) {
+  background-image: url('../images/films3.jpg');
+  top: 70%;
+  left: 17%;
+  width: 15%;
+}
+
+.forTabs:nth-child(9) {
+  background-image: url('../images/articles1.jpg');
+  top: 40%;
+  left: 7%;
+  width: 25%;
+  height: 30%;
+}
+
+.forTabs:nth-child(10) {
+  background-image: url('../images/articles2.jpg');
+  top: 75%;
+  left: 13%;
+  width: 15%;
+}
+
+.forTabs:nth-child(11) {
+  background-image: url('../images/articles3.jpg');
+  top: 45%;
+  left: 30%;
+  width: 25%;
+  height: 40%;
+}
+
+.forTabs:nth-child(12) {
+  background-image: url('../images/articles4.jpg');
+  top: 50%;
+  left: 53%;
+  width: 18%;
+}
+
+@media all and (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    height: 70%;
+  }
+
+  .aboutStudio .title, .films .title, .articles .title {
+    font-size: 6vw;
+  }
+}
