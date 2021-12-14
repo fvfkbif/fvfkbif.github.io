@@ -300,7 +300,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 3%;
-  background: url(../images/Staff_bg.jpg) no-repeat center center/cover;
+  background: url('../images/Staff_bg.jpg') no-repeat center center/cover;
 }
 
 .portraits{
@@ -309,7 +309,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: url(../images/Portraits_bg.jpg) repeat-y;
+  background: url('../images/Portraits_bg.jpg') repeat-y;
   background-size: 100% 400px;
 }
 
@@ -338,13 +338,16 @@ a {
   display: flex;
   flex-direction: row;
   margin-top: 5%;
-  background: url(../images/Awards_bg.jpg) no-repeat center center/cover;
+  background: url('../images/Awards_bg.jpg') no-repeat center center/cover;
 }
 
-.awards img{
-  width: 450px;
+.img-for-award{
+  width: 30%;
+  height: 450px;
+  background: url('../images/For_awards.jpg') no-repeat center top/cover;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: block;
 }
 
 .awardsBlock{
@@ -377,8 +380,84 @@ a {
   height: 3px;
 }
 
+.contaner{
+  background: url('../images/Gray_transperent.png') no-repeat center top/cover;
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.contaner button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 20px;
+  outline: none;
+  background-size: 40%;
+  transform: scale(1);
+  transition: transform ease-in-out 0.4s;
+}
 
+.contaner button:hover{
+  transform: scale(1.2);
+}
+
+.next {
+  background: url('../images/Next_black.png') no-repeat center top/cover;
+  margin-right: 20px;
+}
+
+.prev {
+  background: url('../images/Previous_black.png') no-repeat center top/cover;
+  margin-left: 20px;
+}
+
+.slider{
+  width: 750px;
+  height: 250px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.slider-line{
+  height: 200px;
+  width: 2000px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  text-align: center;
+}
+
+.one-award{
+  width: 500px;
+}
+
+.one-award img{
+  height: 200px;
+  width: 100px;
+}
+
+.one-award p{
+  font-family: Segoe UI Light;
+  font-size: 15px;
+}
+
+@media all and (max-width: 1150px){
+  .slider-line{
+    justify-content: space-around;
+  }
+
+  .img-for-award{
+    display: none;
+  }
+}
 
 @media all and (max-width: 1000px){
   .history{
@@ -397,6 +476,27 @@ a {
 
   .onePortr{
     margin: 30px 50px 30px 50px;
+  }
+
+  .contaner{
+    margin: 40px 0 40px 0;
+  }
+
+  .slider{
+    width: 650px;
+    height: 280px;
+  }
+  
+  .slider-line{
+    width: 1720px;
+  }
+
+  .next {
+    margin-right: 10px;
+  }
+  
+  .prev {
+    margin-left: 10px;
   }
 }
 
@@ -442,9 +542,29 @@ a {
 
   .staff .title p{
     font-size: 35px;
+  }  
+
+  .slider{
+    width: 600px;
+    height: 170px;
   }
 
+  .slider-line{
+    width: 1600px;
+  }
+
+  .one-award{
+    width: 1500px;
+  }
   
+  .one-award img{
+    height: 100px;
+    width: 50px;
+  }
+  
+  .one-award p{
+    font-size: 13px;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -469,6 +589,10 @@ a {
     font-size: 30px;
   }
 
+  .content p{
+    font-size: 15px;
+  }
+
   .truckImage{
     height: 280px;
   }
@@ -479,7 +603,7 @@ a {
 
   .portraits{
     background: url(../images/Portraits_bg.jpg) repeat-y;
-    background-size: 100% 180px;
+    background-size: 100% 220px;
   }
   
   .onePortr{
@@ -487,7 +611,7 @@ a {
   }
   
   .onePortr img{
-    width: 100px;
+    width: 120px;
   }
   
   .onePortr figcaption{
