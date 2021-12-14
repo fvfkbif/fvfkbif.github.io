@@ -1,21 +1,29 @@
 let offset = 0;
-var element = document.getElementById('slide');
-var positionInfo = element.getBoundingClientRect();
-var width = positionInfo.width;
+const maxOffset = 8 - 3; // Total elements - elements on screen
 const sliderLine = document.querySelector('.slider-line');
 
-document.querySelector('.next').addEventListener('click', function () {
-  offset += width;
-  if(offset > 5 * width){
+function applyOffset() {
+  const width = document.getElementById('slide').clientWidth;
+  if (offset > maxOffset) {
     offset = 0;
   }
-  sliderLine.style.left = -offset + 'px';
+  if (offset < 0) {
+    offset = maxOffset;
+  }
+  sliderLine.style.left = (-offset * width) + 'px';
+}
+
+window.addEventListener('resize', function (event) {
+  console.log(offset);
+  setTimeout(applyOffset, 1000);
+});
+
+document.querySelector('.next').addEventListener('click', function () {
+  offset++;
+  applyOffset();
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
-  offset -= width;
-  if(offset < 0){
-    offset = 5 * width;
-  }
-  sliderLine.style.left = -offset + 'px';
+  offset--;
+  applyOffset();
 });
