@@ -1,11 +1,21 @@
 @font-face {
-  font-family: Segoe UI Light;
-  src: url(fonts/Segoe_UI_Light.ttf) format('ttf');
+    font-family: 'Futura Md';
+    src: url('fonts/Futura-Medium.woff2') format('woff2'),
+        url('fonts/Futura-Medium.woff') format('woff'),
+        url('fonts/Futura-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: Futura Md;
-  src: url(fonts/Futura_Md.ttf) format('ttf');
+    font-family: 'Segoe UI';
+    src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
+        url('fonts/SegoeUI-Light.woff') format('woff'),
+        url('fonts/SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -296,4 +306,3 @@ ul li:hover .submenu {
   left: 53%;
   width: 18%;
 }
-

@@ -1,16 +1,34 @@
 @font-face {
-  font-family: Segoe UI Light;
-  src: url(fonts/Segoe_UI_Light.ttf) format('ttf');
+    font-family: 'Futura Md';
+    src: url('fonts/Futura-Medium.woff2') format('woff2'),
+        url('fonts/Futura-Medium.woff') format('woff'),
+        url('fonts/Futura-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: Futura Md;
-  src: url(fonts/Futura_Md.ttf) format('ttf');
+    font-family: 'Segoe UI';
+    src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
+        url('fonts/SegoeUI-Light.woff') format('woff'),
+        url('fonts/SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: Mysl;
-  src: url(fonts/Mysl.ttf) format('ttf');
+    font-family: 'Mysl';
+    src: url('fonts/Mysl-BoldItalic.eot');
+    src: url('fonts/Mysl-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Mysl-BoldItalic.woff2') format('woff2'),
+        url('fonts/Mysl-BoldItalic.woff') format('woff'),
+        url('fonts/Mysl-BoldItalic.ttf') format('truetype'),
+        url('fonts/Mysl-BoldItalic.svg#Mysl-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 ::-webkit-scrollbar {
@@ -20,14 +38,14 @@
 ::-webkit-scrollbar-track {
   background: white;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 body {
@@ -510,7 +528,7 @@ footer img{
   .next {
     margin-right: 10px;
   }
-  
+
   .prev {
     margin-left: 10px;
   }
@@ -558,7 +576,7 @@ footer img{
 
   .staff .title p{
     font-size: 35px;
-  }  
+  }
 
   .slider{
     width: 80vw;
@@ -572,12 +590,12 @@ footer img{
   .one-award{
     width: 200px;
   }
-  
+
   .one-award img{
     height: 100px;
     width: 50px;
   }
-  
+
   .one-award p{
     font-size: 13px;
   }
@@ -625,15 +643,15 @@ footer img{
     background: url(../images/Portraits_bg.jpg) repeat-y;
     background-size: 100% 220px;
   }
-  
+
   .onePortr{
     margin: 10px 40px 10px 40px;
   }
-  
+
   .onePortr img{
     width: 120px;
   }
-  
+
   .onePortr figcaption{
     font-size: 10px;
   }
@@ -679,7 +697,7 @@ footer img{
   .next {
     margin-right: 5px;
   }
-  
+
   .prev {
     margin-left: 5px;
   }
