@@ -14,7 +14,6 @@ function applyOffset() {
 }
 
 window.addEventListener('resize', function (event) {
-  console.log(offset);
   setTimeout(applyOffset, 1000);
 });
 

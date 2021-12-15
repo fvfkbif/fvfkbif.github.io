@@ -134,7 +134,7 @@ a {
 }
 
 .aboutStudio .title, .films .title, .articles .title {
-  padding: 20px;
+  padding: 25px;
   font-family: Futura Md;
   font-size: 3vw;
   color: black;
@@ -193,7 +193,7 @@ ul li:hover .submenu {
   padding-top: 12px;
   text-align: center;
   font-family: Segoe UI Light;
-  font-size: 1.9vw;
+  font-size: 1.8vw;
   -webkit-transition: font-size linear 0.2s;
   -moz-transition: font-size linear 0.2s;
   -o-transition: font-size linear 0.2s;
@@ -201,7 +201,7 @@ ul li:hover .submenu {
 }
 
 .submenu li:hover a p {
-  font-size: 2.2vw;
+  font-size: 2vw;
 }
 
 .forTabs {
@@ -297,15 +297,3 @@ ul li:hover .submenu {
   width: 18%;
 }
 
-@media all and (max-width: 600px) {
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-    top: 50%;
-    height: 70%;
-  }
-
-  .aboutStudio .title, .films .title, .articles .title {
-    font-size: 6vw;
-  }
-}

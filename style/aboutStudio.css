@@ -215,6 +215,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 }
 
 .history .title p{
@@ -338,11 +339,12 @@ a {
   display: flex;
   flex-direction: row;
   margin-top: 5%;
+  margin-bottom: 5%;
   background: url('../images/Awards_bg.jpg') no-repeat center center/cover;
 }
 
 .img-for-award{
-  width: 30%;
+  width: 40%;
   height: 450px;
   background: url('../images/For_awards.jpg') no-repeat center top/cover;
   margin-top: 20px;
@@ -364,6 +366,7 @@ a {
   flex-direction: row;
   align-items: center;
   margin-top: 25px;
+  overflow: hidden;
 }
 
 .awardsBlock .title p{
@@ -415,16 +418,15 @@ a {
 }
 
 .slider{
-  width: 750px;
-  height: 250px;
+  width: 70vw;
+  height: 280px;
   margin: 30px auto;
   overflow: hidden;
-  border: 1px solid;
 }
 
 .slider-line{
   height: 200px;
-  width: 2000px;
+  width: 185vw;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -436,7 +438,7 @@ a {
 }
 
 .one-award{
-  width: 500px;
+  width: 550px;
 }
 
 .one-award img{
@@ -448,6 +450,29 @@ a {
   font-family: Segoe UI Light;
   font-size: 15px;
 }
+
+footer{
+  background: url('../images/Footer_bg.jpg') no-repeat center center/cover;
+  font-family: Futura Md;
+  font-size: 25px;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  right: 0;
+  margin-left: 20px;
+}
+
+footer img{
+  width: 50px;
+  height: fit-content;
+}
+
 
 @media all and (max-width: 1150px){
   .slider-line{
@@ -480,15 +505,6 @@ a {
 
   .contaner{
     margin: 40px 0 40px 0;
-  }
-
-  .slider{
-    width: 650px;
-    height: 280px;
-  }
-  
-  .slider-line{
-    width: 1720px;
   }
 
   .next {
@@ -545,16 +561,16 @@ a {
   }  
 
   .slider{
-    width: 600px;
-    height: 170px;
+    width: 80vw;
+    height: 180px;
   }
 
   .slider-line{
-    width: 1600px;
+    width: 210vw;
   }
 
   .one-award{
-    width: 1500px;
+    width: 200px;
   }
   
   .one-award img{
@@ -564,6 +580,10 @@ a {
   
   .one-award p{
     font-size: 13px;
+  }
+
+  footer{
+    font-size: 20px;
   }
 }
 
@@ -617,7 +637,15 @@ a {
   .onePortr figcaption{
     font-size: 10px;
   }
-  
+
+  .awardsBlock .title p{
+    font-size: 25px;
+  }
+
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -642,5 +670,21 @@ a {
 
   .onePortr{
     margin: 10px 20px 10px 20px;
+  }
+
+  .awardsBlock .title img{
+    width: 40%;
+  }
+
+  .next {
+    margin-right: 5px;
+  }
+  
+  .prev {
+    margin-left: 5px;
+  }
+
+  footer{
+    font-size: 15px;
   }
 }
