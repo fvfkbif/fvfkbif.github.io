@@ -1,11 +1,21 @@
 @font-face {
-  font-family: Mysl;
-  src: url(fonts/Mysl.ttf) format('ttf');
+    font-family: 'Segoe UI';
+    src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
+        url('fonts/SegoeUI-Light.woff') format('woff'),
+        url('fonts/SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: Segoe UI Light;
-  src: url(fonts/Segoe_UI_Light.ttf) format('ttf');
+    font-family: 'Mysl';
+    src: url('fonts/Mysl-BoldItalic.woff2') format('woff2'),
+        url('fonts/Mysl-BoldItalic.woff') format('woff'),
+        url('fonts/Mysl-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 body {
