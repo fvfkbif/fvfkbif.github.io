@@ -288,6 +288,10 @@ body {
     width: 100%;
   }
 
+  .hayao_miyazaki {
+    bottom: 5vh;
+  }
+
   .hayao_miyazaki .line {
     width: 6vw;
   }
