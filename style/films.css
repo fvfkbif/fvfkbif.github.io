@@ -1,0 +1,386 @@
+@font-face {
+  font-family: 'Futura Md';
+  src: url('fonts/Futura-Medium.woff2') format('woff2'),
+    url('fonts/Futura-Medium.woff') format('woff'),
+    url('fonts/Futura-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
+    url('fonts/SegoeUI-Light.woff') format('woff'),
+    url('fonts/SegoeUI-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mysl';
+  src: url('fonts/Mysl-BoldItalic.eot');
+  src: url('fonts/Mysl-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Mysl-BoldItalic.woff2') format('woff2'),
+    url('fonts/Mysl-BoldItalic.woff') format('woff'),
+    url('fonts/Mysl-BoldItalic.ttf') format('truetype'),
+    url('fonts/Mysl-BoldItalic.svg#Mysl-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background: url('../images/films/films_bg.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+  scrollbar-track-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.topWrapper {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  z-index: 10;
+}
+
+.top {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 3% 0 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 10%;
+  width: 74%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 50%;
+  width: fit-content;
+}
+
+.menu a, .menu a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.line {
+  width: 2vw;
+  height: 2px;
+}
+
+.menu .line {
+  -webkit-transition: width ease-in-out 0.4s;
+  -moz-transition: width ease-in-out 0.4s;
+  -o-transition: width ease-in-out 0.4s;
+  transition: width ease-in-out 0.4s;
+}
+
+.menu p {
+  font-family: Segoe UI;
+  font-size: 28px;
+  padding: 0 15px 0 15px;
+  -webkit-transition: font-size ease-in-out 0.4s;
+  -moz-transition: font-size ease-in-out 0.4s;
+  -o-transition: font-size ease-in-out 0.4s;
+  transition: font-size ease-in-out 0.4s;
+}
+
+.menu:hover p {
+  font-size: 32px;
+}
+
+.menu:hover .line {
+  width: 0;
+}
+
+.top .logo, .top .netflix {
+  width: 140px;
+  height: fit-content;
+}
+
+.films {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.films .title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.films .title p {
+  color: white;
+  font-family: Futura Md;
+  font-size: 50px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 400px;
+}
+
+.films .title img {
+  width: 35%;
+  height: 3px;
+}
+
+.films .content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.tab {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background: url('../images/films/Transperent_bg.png') no-repeat;
+  background-size: cover;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.tab .title {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: flex-start;
+}
+
+.tab .title h1 {
+  font-size: 35px;
+  font-family: Futura Md;
+}
+
+.tab .title h2 {
+  font-size: 18px;
+  font-family: Mysl;
+  margin-top: 10px;
+}
+
+.tab .description {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.description img {
+  height: 350px;
+  width: fit-content;
+}
+
+.description .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.description .info p {
+  font-size: 17px;
+  font-family: Segoe UI;
+}
+
+.description .info p span {
+  font-weight: bold;
+}
+
+.description .info .watch {
+  margin-top: 10px;
+  font-family: Futura Md;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: font-size ease 0.5s;
+  -moz-transition: font-size ease 0.5s;
+  -o-transition: font-size ease 0.5s;
+  transition: font-size ease 0.5s;
+}
+
+.description .info .watch:hover {
+  font-size: 21px;
+}
+
+footer {
+  font-family: Futura Md;
+  font-size: 25px;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  background: url('../images/Transperent_bg.png') no-repeat center top/cover;
+}
+
+
+footer a {
+  right: 0;
+  margin-left: 20px;
+}
+
+footer img {
+  width: 50px;
+  height: fit-content;
+}
+
+
+@media all and (max-width: 1000px) {
+
+  .films .title img {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .top .logo, .top .netflix {
+    width: 100px;
+  }
+
+  .menu p {
+    font-size: 24px;
+  }
+
+  .menu:hover p {
+    font-size: 26px;
+  }
+
+  .films .title p {
+    font-size: 35px;
+  }
+  
+  .films .content {
+    margin-top: 15px;
+  }
+
+  .tab .title {
+    width: 100%;
+  }
+
+  .tab .title h1 {
+    font-size: 30px;
+  }
+  
+  .tab .title h2 {
+    font-size: 15px;
+  }
+
+  .description .info p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .top .logo, .top .netflix {
+    width: 70px;
+  }
+
+  .menu p {
+    font-size: 18px;
+  }
+
+  .menu:hover p {
+    font-size: 20px;
+  }
+
+  .line {
+    width: 3vw;
+  }
+
+  .films .title p {
+    font-size: 25px;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .description img {
+    height: 250px;
+  }
+
+  .description .info .watch {
+    font-size: 17px;
+  }
+  
+  .description .info .watch:hover {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .top {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .films .title p {
+    font-size: 20px;
+  }
+
+  .description img {
+    height: 200px;
+  }
+
+  .tab .title h1 {
+    font-size: 25px;
+  }
+  
+  .tab .title h2 {
+    font-size: 13px;
+  }
+}

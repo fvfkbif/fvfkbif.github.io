@@ -1,21 +1,21 @@
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
-        url('fonts/SegoeUI-Light.woff') format('woff'),
-        url('fonts/SegoeUI-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Segoe UI';
+  src: url('fonts/SegoeUI-Light.woff2') format('woff2'),
+    url('fonts/SegoeUI-Light.woff') format('woff'),
+    url('fonts/SegoeUI-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Mysl';
-    src: url('fonts/Mysl-BoldItalic.woff2') format('woff2'),
-        url('fonts/Mysl-BoldItalic.woff') format('woff'),
-        url('fonts/Mysl-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Mysl';
+  src: url('fonts/Mysl-BoldItalic.woff2') format('woff2'),
+    url('fonts/Mysl-BoldItalic.woff') format('woff'),
+    url('fonts/Mysl-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 body {
@@ -71,10 +71,12 @@ body {
 }
 
 .menu p {
-  font-family: Segoe UI Light;
-  font-weight: lighter;
+  font-family: Segoe UI;
   font-size: 28px;
   padding: 0 15px 0 15px;
+  -webkit-transition: font-size ease-in-out 0.4s;
+  -moz-transition: font-size ease-in-out 0.4s;
+  -o-transition: font-size ease-in-out 0.4s;
   transition: font-size ease-in-out 0.4s;
 }
 
@@ -92,7 +94,8 @@ body {
 }
 
 .top .logo, .top .netflix {
-  height: 3vw;
+  width: 140px;
+  height: fit-content;
 }
 
 .slider {
@@ -109,7 +112,10 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity ease-in-out 2s;
+  -moz-transition: opacity ease-in-out 2s;
+  -o-transition: opacity ease-in-out 2s;
+  transition: opacity ease-in-out 2s;
 }
 
 .slide.current {
@@ -124,11 +130,14 @@ body {
   height: 100px;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 2s ease-in-out;
   text-align: center;
   color: white;
   font-family: Mysl;
   font-size: 22px;
+  -webkit-transition: opacity ease-in-out 2s;
+  -moz-transition: opacity ease-in-out 2s;
+  -o-transition: opacity ease-in-out 2s;
+  transition: opacity ease-in-out 2s;
 }
 
 .slide.current .quote {
@@ -147,9 +156,12 @@ body {
   position: absolute;
   top: 45%;
   right: 13%;
-  background: url('../images/Next.png') no-repeat center top/cover;
+  background: url('../images/icons/Next.png') no-repeat center top/cover;
   background-size: 50%;
   transform: scale(1);
+  -webkit-transition: transform ease-in-out 0.4s;
+  -moz-transition: transform ease-in-out 0.4s;
+  -o-transition: transform ease-in-out 0.4s;
   transition: transform ease-in-out 0.4s;
 }
 
@@ -157,9 +169,12 @@ body {
   position: absolute;
   top: 45%;
   left: 13%;
-  background: url('../images/Previous.png') no-repeat center top/cover;
+  background: url('../images/icons/Previous.png') no-repeat center top/cover;
   background-size: 50%;
   transform: scale(1);
+  -webkit-transition: transform ease-in-out 0.4s;
+  -moz-transition: transform ease-in-out 0.4s;
+  -o-transition: transform ease-in-out 0.4s;
   transition: transform ease-in-out 0.4s;
 }
 
@@ -194,43 +209,86 @@ body {
 }
 
 .hayao_miyazaki p {
-  font-family: Segoe UI Light;
-  font-weight: lighter;
+  font-family: Segoe UI;
   font-size: 25px;
   padding: 0 15px 0 15px;
 }
 
-@media all and (max-width: 500px) {
-  .slide .quote {
-    width: 100%;
-    padding: 0 15px 0 15px;
-  }
-}
-
 .slide:first-child {
-  background: url('../images/Bg1.jpg') no-repeat center top/cover;
+  background: url('../images/index_bg/Bg1.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url('../images/Bg2.jpg') no-repeat center top/cover;
+  background: url('../images/index_bg/Bg2.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url('../images/Bg3.jpg') no-repeat center top/cover;
+  background: url('../images/index_bg/Bg3.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(4) {
-  background: url('../images/Bg4.jpg') no-repeat center top/cover;
+  background: url('../images/index_bg/Bg4.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(5) {
-  background: url('../images/Bg5.jpg') no-repeat center top/cover;
+  background: url('../images/index_bg/Bg5.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(6) {
-  background: url('../images/Bg6.jpg') no-repeat center center/cover;
+  background: url('../images/index_bg/Bg6.jpg') no-repeat center center/cover;
 }
 
 .slide:nth-child(7) {
-  background: url('../images/Bg7.jpg') no-repeat center center/cover;
+  background: url('../images/index_bg/Bg7.jpg') no-repeat center center/cover;
+}
+
+@media all and (max-width: 800px) {
+  .top .logo, .top .netflix {
+    width: 100px;
+  }
+
+  .menu p {
+    font-size: 24px;
+  }
+
+  .menu:hover p {
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .slide .quote {
+    width: 70vw;
+    font-size: 18px;
+    bottom: 10vh;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .top .logo, .top .netflix {
+    width: 70px;
+  }
+
+  .menu p {
+    font-size: 18px;
+  }
+
+  .menu:hover p {
+    font-size: 20px;
+  }
+
+  .line {
+    width: 3vw;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .top {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .hayao_miyazaki .line {
+    width: 6vw;
+  }
 }

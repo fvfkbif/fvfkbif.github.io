@@ -112,8 +112,7 @@ a {
 }
 
 .menu p {
-  font-family: Segoe UI Light;
-  font-weight: lighter;
+  font-family: Segoe UI;
   font-size: 28px;
   padding: 0 15px 0 15px;
   -webkit-transition: font-size ease-in-out 0.4s;
@@ -131,14 +130,15 @@ a {
 }
 
 .top .logo, .top .netflix {
-  height: 3vw;
+  width: 140px;
+  height: fit-content;
 }
 
 .pageTop {
   position: relative;
   width: 100%;
   height: fit-content;
-  background: url('../images/pageTop.jpg') no-repeat center bottom/cover;
+  background: url('../images/aboutStudio/pageTop.jpg') no-repeat center bottom/cover;
   display: flex;
   flex-direction: column;
   color: white;
@@ -177,7 +177,7 @@ a {
 }
 
 .year {
-  font-family: Segoe UI Light;
+  font-family: Segoe UI;
   font-size: 28px;
   align-self: flex-end;
   margin-top: 10px;
@@ -188,9 +188,9 @@ a {
   position: relative;
   width: 100%;
   height: fit-content;
-  background: url('../images/Quote_img_1.png') 5% 0% no-repeat,
-    url('../images/Quote_img_2.png') 15% 100% no-repeat,
-    url('../images/Quote_img_3.png') 100% no-repeat;
+  background: url('../images/aboutStudio/Quote_img_1.png') 5% 0% no-repeat,
+    url('../images/aboutStudio/Quote_img_2.png') 15% 100% no-repeat,
+    url('../images/aboutStudio/Quote_img_3.png') 100% no-repeat;
   background-size: 300px, 300px, 230px;
   display: flex;
   flex-direction: column;
@@ -209,7 +209,7 @@ a {
 .totoroImage{
   width: 100%;
   height: 500px;
-  background: url('../images/Tototro_image.jpg') no-repeat center top/cover;
+  background: url('../images/aboutStudio/Tototro_image.jpg') no-repeat center top/cover;
 }
 
 .history{
@@ -218,12 +218,12 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  background: url('../images/Gray_rectangle.png') 0 0 no-repeat,
-    url('../images/Gray_rectangle.png') 30% 100% no-repeat,
-    url('../images/History_3.jpg') 85% 150px no-repeat,
-    url('../images/History_2.jpg') 95% 370px no-repeat,
-    url('../images/History_1.jpg') 85% 780px no-repeat,
-    url('../images/Gray_rectangle.png') 100% 20px no-repeat;
+  background: url('../images/aboutStudio/Gray_rectangle.png') 0 0 no-repeat,
+    url('../images/aboutStudio/Gray_rectangle.png') 30% 100% no-repeat,
+    url('../images/aboutStudio/History_3.jpg') 85% 150px no-repeat,
+    url('../images/aboutStudio/History_2.jpg') 95% 370px no-repeat,
+    url('../images/aboutStudio/History_1.jpg') 85% 780px no-repeat,
+    url('../images/aboutStudio/Gray_rectangle.png') 100% 20px no-repeat;
   background-size: 300px 450px, 400px 150px, 360px, 300px, 300px, 400px 150px;
 }
 
@@ -264,7 +264,7 @@ a {
 }
 
 .content p{
-  font-family: Segoe UI Light;
+  font-family: Segoe UI;
   font-size: 20px;
   text-indent: 30px;
   margin-top: 10px;
@@ -278,7 +278,7 @@ a {
 .truckImage{
   width: 100%;
   height: 500px;
-  background: url('../images/Truck.jpg') no-repeat center center/cover;
+  background: url('../images/aboutStudio/Truck.jpg') no-repeat center center/cover;
 }
 
 .staff{
@@ -319,7 +319,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 3%;
-  background: url('../images/Staff_bg.jpg') no-repeat center center/cover;
+  background: url('../images/aboutStudio/Staff_bg.jpg') no-repeat center center/cover;
 }
 
 .portraits{
@@ -328,7 +328,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: url('../images/Portraits_bg.jpg') repeat-y;
+  background: url('../images/aboutStudio/Portraits_bg.jpg') repeat-y;
   background-size: 100% 400px;
 }
 
@@ -343,7 +343,7 @@ a {
 
 .onePortr figcaption{
   text-align: center;
-  font-family: Segoe UI Light;
+  font-family: Segoe UI;
   font-size: 20px;
 }
 
@@ -358,13 +358,13 @@ a {
   flex-direction: row;
   margin-top: 5%;
   margin-bottom: 5%;
-  background: url('../images/Awards_bg.jpg') no-repeat center center/cover;
+  background: url('../images/aboutStudio/Awards_bg.jpg') no-repeat center center/cover;
 }
 
 .img-for-award{
   width: 40%;
   height: 450px;
-  background: url('../images/For_awards.jpg') no-repeat center top/cover;
+  background: url('../images/aboutStudio/For_awards.jpg') no-repeat center top/cover;
   margin-top: 20px;
   margin-bottom: 20px;
   display: block;
@@ -402,7 +402,7 @@ a {
 }
 
 .contaner{
-  background: url('../images/Gray_transperent.png') no-repeat center top/cover;
+  background: url('../images/aboutStudio/Gray_transperent.png') no-repeat center top/cover;
   margin: 20px 40px;
   display: flex;
   flex-direction: row;
@@ -418,6 +418,9 @@ a {
   outline: none;
   background-size: 40%;
   transform: scale(1);
+  -webkit-transition: transform ease-in-out 0.4s;
+  -moz-transition: transform ease-in-out 0.4s;
+  -o-transition: transform ease-in-out 0.4s;
   transition: transform ease-in-out 0.4s;
 }
 
@@ -426,12 +429,12 @@ a {
 }
 
 .next {
-  background: url('../images/Next_black.png') no-repeat center top/cover;
+  background: url('../images/icons/Next_black.png') no-repeat center top/cover;
   margin-right: 20px;
 }
 
 .prev {
-  background: url('../images/Previous_black.png') no-repeat center top/cover;
+  background: url('../images/icons/Previous_black.png') no-repeat center top/cover;
   margin-left: 20px;
 }
 
@@ -445,14 +448,17 @@ a {
 .slider-line{
   height: 200px;
   width: 185vw;
+  text-align: center;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
   left: 0;
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
   transition: all ease 1s;
-  text-align: center;
 }
 
 .one-award{
@@ -465,12 +471,12 @@ a {
 }
 
 .one-award p{
-  font-family: Segoe UI Light;
+  font-family: Segoe UI;
   font-size: 15px;
 }
 
 footer{
-  background: url('../images/Footer_bg.jpg') no-repeat center center/cover;
+  background: url('../images/aboutStudio/Footer_bg.jpg') no-repeat center center/cover;
   font-family: Futura Md;
   font-size: 25px;
   color: white;
@@ -504,12 +510,12 @@ footer img{
 
 @media all and (max-width: 1000px){
   .history{
-    background: url('../images/Gray_rectangle.png') 0 0 no-repeat,
-      url('../images/Gray_rectangle.png') 30% 100% no-repeat,
-      url('../images/History_3.jpg') 85% 450px no-repeat,
-      url('../images/History_2.jpg') 95% 670px no-repeat,
-      url('../images/History_1.jpg') 85% 1080px no-repeat,
-      url('../images/Gray_rectangle.png') 100% 50px no-repeat;
+    background: url('../images/aboutStudio/Gray_rectangle.png') 0 0 no-repeat,
+      url('../images/aboutStudio/Gray_rectangle.png') 30% 100% no-repeat,
+      url('../images/aboutStudio/History_3.jpg') 85% 450px no-repeat,
+      url('../images/aboutStudio/History_2.jpg') 95% 670px no-repeat,
+      url('../images/aboutStudio/History_1.jpg') 85% 1080px no-repeat,
+      url('../images/aboutStudio/Gray_rectangle.png') 100% 50px no-repeat;
     background-size: 300px 450px, 400px 150px, 360px, 300px, 300px, 400px 150px;
   }
 
@@ -535,6 +541,18 @@ footer img{
 }
 
 @media all and (max-width: 800px) {
+  .top .logo, .top .netflix {
+    width: 100px;
+  }
+
+  .menu p {
+    font-size: 24px;
+  }
+
+  .menu:hover p {
+    font-size: 26px;
+  }
+
   .pageTop .txtWithImg {
     width: 400px;
   }
@@ -562,9 +580,9 @@ footer img{
   }
 
   .history{
-    background: url('../images/Gray_rectangle.png') 0 0 no-repeat,
-      url('../images/Gray_rectangle.png') 30% 100% no-repeat,
-      url('../images/Gray_rectangle.png') 100% 50px no-repeat;
+    background: url('../images/aboutStudio/Gray_rectangle.png') 0 0 no-repeat,
+      url('../images/aboutStudio/Gray_rectangle.png') 30% 100% no-repeat,
+      url('../images/aboutStudio/Gray_rectangle.png') 100% 50px no-repeat;
     background-size: 300px 450px, 400px 150px, 400px 150px;
   }
 
@@ -606,9 +624,25 @@ footer img{
 }
 
 @media all and (max-width: 600px) {
+  .top .logo, .top .netflix {
+    width: 70px;
+  }
+
+  .menu p {
+    font-size: 18px;
+  }
+
+  .menu:hover p {
+    font-size: 20px;
+  }
+
+  .line {
+    width: 3vw;
+  }
+
   .quote {
-    background: url('../images/Quote_img_1.png') 5% 0% no-repeat,
-      url('../images/Quote_img_2.png') 100% 100% no-repeat;
+    background: url('../images/aboutStudio/Quote_img_1.png') 5% 0% no-repeat,
+      url('../images/aboutStudio/Quote_img_2.png') 100% 100% no-repeat;
     background-size: 200px, 200px, 180px;
   }
 
@@ -617,9 +651,9 @@ footer img{
   }
 
   .history{
-    background: url('../images/Gray_rectangle.png') 0 130px no-repeat,
-      url('../images/Gray_rectangle.png') 30% 100% no-repeat,
-      url('../images/Gray_rectangle.png') 100% 100px no-repeat;
+    background: url('../images/aboutStudio/Gray_rectangle.png') 0 130px no-repeat,
+      url('../images/aboutStudio/Gray_rectangle.png') 30% 100% no-repeat,
+      url('../images/aboutStudio/Gray_rectangle.png') 100% 100px no-repeat;
     background-size: 150px 450px, 400px 150px, 250px 150px;
   }
 
@@ -640,7 +674,6 @@ footer img{
   }
 
   .portraits{
-    background: url(../images/Portraits_bg.jpg) repeat-y;
     background-size: 100% 220px;
   }
 
@@ -667,6 +700,11 @@ footer img{
 }
 
 @media all and (max-width: 450px) {
+  .top {
+    justify-content: space-around;
+    width: 100%;
+  }
+
   .pageTop .txtWithImg {
     margin-top: 15%;
     width: 300px;
