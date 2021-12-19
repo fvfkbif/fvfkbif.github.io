@@ -49,7 +49,7 @@
 }
 
 body {
-  background: url('../images/films/films_bg.jpg') no-repeat center center/cover;
+  background: url('../images/articles/articles_bg3.jpg') no-repeat center center/cover;
   background-attachment: fixed;
   color: white;
   overflow-x: hidden;
@@ -154,7 +154,7 @@ a, a:visited {
   height: fit-content;
 }
 
-.films {
+.articles {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -162,7 +162,7 @@ a, a:visited {
   margin-top: 5%;
 }
 
-.films .title {
+.articles .title {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -170,7 +170,7 @@ a, a:visited {
   align-items: center;
 }
 
-.films .title p {
+.articles .title p {
   color: white;
   font-family: Futura Md;
   font-size: 50px;
@@ -180,12 +180,12 @@ a, a:visited {
   width: 400px;
 }
 
-.films .title img {
-  width: 35%;
+.articles .title img {
+  width: 42%;
   height: 3px;
 }
 
-.films .content {
+.articles .content {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -198,7 +198,7 @@ a, a:visited {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  background: url('../images/films/Transperent_bg.png') no-repeat;
+  background: url('../images/articles/Transperent_bg.png') no-repeat;
   background-size: cover;
   padding: 20px;
   align-items: flex-start;
@@ -207,19 +207,12 @@ a, a:visited {
 .tab .title {
   display: flex;
   flex-direction: column;
-  width: 600px;
   align-items: flex-start;
 }
 
 .tab .title h1 {
   font-size: 35px;
   font-family: Futura Md;
-}
-
-.tab .title h2 {
-  font-size: 18px;
-  font-family: Mysl;
-  margin-top: 10px;
 }
 
 .tab .description {
@@ -229,7 +222,7 @@ a, a:visited {
 }
 
 .description img {
-  height: 350px;
+  height: 200px;
   width: fit-content;
 }
 
@@ -242,10 +235,6 @@ a, a:visited {
 .description .info p {
   font-size: 17px;
   font-family: Segoe UI;
-}
-
-.description .info p span {
-  font-weight: bold;
 }
 
 .description .info .watch {
@@ -273,7 +262,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  background: url('../images/films/Transperent_bg.png') no-repeat center top/cover;
+  background: url('../images/articles/Transperent_bg.png') no-repeat center top/cover;
 }
 
 
@@ -285,14 +274,6 @@ footer a {
 footer img {
   width: 50px;
   height: fit-content;
-}
-
-
-@media all and (max-width: 1000px) {
-
-  .films .title img {
-    width: 30%;
-  }
 }
 
 @media all and (max-width: 800px) {
@@ -308,7 +289,7 @@ footer img {
     font-size: 26px;
   }
 
-  .films .title p {
+  .articles .title p {
     font-size: 35px;
   }
 
@@ -318,10 +299,6 @@ footer img {
 
   .tab .title h1 {
     font-size: 30px;
-  }
-
-  .tab .title h2 {
-    font-size: 15px;
   }
 
   .description .info p {
@@ -354,21 +331,17 @@ footer img {
     visibility: hidden;
   }
 
-  .films {
+  .articles {
     margin-top: 15px;
   }
 
-  .films .title p {
+  .articles .title p {
     font-size: 30px;
   }
 
   .tab {
     width: 100%;
     margin-top: 15px;
-  }
-
-  .description img {
-    height: 250px;
   }
 
   .description .info .watch {
@@ -391,7 +364,7 @@ footer img {
     width: 100%;
   }
 
-  .films .title p {
+  .articles .title p {
     font-size: 25px;
   }
 
@@ -401,9 +374,5 @@ footer img {
 
   .tab .title h1 {
     font-size: 25px;
-  }
-
-  .tab .title h2 {
-    font-size: 13px;
   }
 }
