@@ -1,16 +1,27 @@
-$(function() {
-    $('.scrollup').click(function() {
-      $("html, body").animate({
-        scrollTop:0
-      },1000);
+$(function () {
+    $('.scrollup').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
     })
-  })
+})
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop()>400) {
-      $('.scrollup').fadeIn();
+const footer = $('.footer');
+const scrollBtn = $('.scrollup');
+const padding = 25;
+
+$(window).scroll(function () {
+    var distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
+
+    if (distanceFromBottom <= footer.innerHeight()) {
+        scrollBtn.css('bottom', (footer.innerHeight() - distanceFromBottom) + padding);
+    } else {
+        scrollBtn.css('bottom', padding);
     }
-    else {
-      $('.scrollup').fadeOut();
+
+    if ($(this).scrollTop() > 50) {
+        scrollBtn.fadeIn();
+    } else {
+        scrollBtn.fadeOut();
     }
-  });
+});
