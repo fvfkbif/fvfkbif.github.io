@@ -352,7 +352,7 @@ ul li:hover .submenu {
   .tabs {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70vh;
     transform: translateX(-50%);
   }
