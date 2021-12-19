@@ -67,6 +67,25 @@ a, a:visited {
   color: white;
 }
 
+.scrollup {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: url('../images/icons/scrollUp.png') no-repeat center top/cover;
+  display: none;
+  -webkit-transition: background-image ease-in-out 0.5s;
+  -moz-transition: background-image ease-in-out 0.5s;
+  -o-transition: background-image ease-in-out 0.5s;
+  transition: background-image ease-in-out 0.5s;
+}
+
+.scrollup:hover {
+  background-image: url('../images/icons/scrollUp_hover.png');
+}
+
 .topWrapper {
   position: relative;
   width: 100%;
@@ -172,7 +191,6 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3%;
 }
 
 .tab {
@@ -293,10 +311,6 @@ footer img {
   .films .title p {
     font-size: 35px;
   }
-  
-  .films .content {
-    margin-top: 15px;
-  }
 
   .tab .title {
     width: 100%;
@@ -305,7 +319,7 @@ footer img {
   .tab .title h1 {
     font-size: 30px;
   }
-  
+
   .tab .title h2 {
     font-size: 15px;
   }
@@ -336,12 +350,21 @@ footer img {
     width: 3vw;
   }
 
+  .scrollup, .scrollup:hover {
+    visibility: hidden;
+  }
+
+  .films {
+    margin-top: 15px;
+  }
+
   .films .title p {
     font-size: 25px;
   }
 
   .tab {
     width: 100%;
+    margin-top: 15px;
   }
 
   .description img {
@@ -351,7 +374,7 @@ footer img {
   .description .info .watch {
     font-size: 17px;
   }
-  
+
   .description .info .watch:hover {
     font-size: 18px;
   }
@@ -379,7 +402,7 @@ footer img {
   .tab .title h1 {
     font-size: 25px;
   }
-  
+
   .tab .title h2 {
     font-size: 13px;
   }

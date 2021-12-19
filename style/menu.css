@@ -116,9 +116,9 @@ a {
 .aboutStudio, .films, .articles{
   background: no-repeat center/cover;
   background-image: url('../images/menu/menu.whiteBackground.jpg');
-  -webkit-transition: background-image ease-in-out 0.4s;
-  -moz-transition: background-image ease-in-out 0.4s;
-  -o-transition: background-image ease-in-out 0.4s;
+  -webkit-transition: background-image ease-in-out 0.8s;
+  -moz-transition: background-image ease-in-out 0.8s;
+  -o-transition: background-image ease-in-out 0.8s;
   transition: background-image ease-in-out 0.8s;
 }
 
